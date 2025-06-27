@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web App</title>
+  <link rel="stylesheet" href="to_do.css" />
+</head>
+<body>
+
+  <div id="app">
+    <h1>Add Task</h1>
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Enter a new task" required />
+      <button type="submit">Add Task</button> 
+      <button type="button" id="clear-tasks">Clear Tasks</button>
+    </form>
+
+    <h2>Filter by:</h2>
+    <div id="filter-options">
+
+        <label for="filters">Filters</label>
+
+        <select name="filters" id="filter-options">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+        </select>
+    </div>
+  </div>
+    <h2>Tasks</h2>
+    <ul id="task-list">
+        
+    </ul>
+
+  <script src="to_do.js"></script>
+</body>
+</html>
