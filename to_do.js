@@ -27,3 +27,10 @@ formID.addEventListener("submit", function (e) {
   
   inputID.value = ""; // Clear input field
 })
+
+// Function to clear all tasks
+clearID.addEventListener("click", function () {
+  if (confirm("Are you sure you want to clear all tasks?")) {
+    listID.innerHTML = ""; // Clear the task list
+  }
+});

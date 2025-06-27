@@ -1,10 +1,29 @@
 /* General styles */
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #ffffff;
+html, body {
+	background:#f7f1f1;
+	font-size:1.1rem;
+	font-family:'Quicksand', sans-serif;
+	height:100%;
 }
 
 #app {
-  padding: 20px;
+    margin:4rem auto;
+    padding:2rem 3rem 3rem;
+    max-width:500px;
+    background:#FF6666;
+    color:#FFF;
+    box-shadow:-20px -20px 0px 0px rgba(100,100,100,.1);
+}
+
+
+.delete-btn {
+  margin-left: auto;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1214/1214428.png");
+  background-size: 16px;
+  background-position: center;
+  cursor: pointer;
 }

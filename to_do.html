@@ -27,11 +27,20 @@
             <option value="pending">Pending</option>
         </select>
     </div>
+    <h2>To-Do List</h2>
+    <div id="task-list">
+      <p v-if="tasks.length === 0">No tasks available</p>
+    <ul class="task-list">
+		<li class="task-list-item" v-for="task in tasks">
+			<label class="task-list-item-label">
+        <input type="checkbox">
+				<span>{{task.name}}</span>
+			</label>
+			<span @click="delItem(task)" class="delete-btn" title="Delete Task">{{task.del}}</span>
+		</li>
+	</ul>
   </div>
-    <h2>Tasks</h2>
-    <ul id="task-list">
-        
-    </ul>
+    
 
   <script src="to_do.js"></script>
 </body>
