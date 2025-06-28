@@ -16,32 +16,22 @@
       <button type="button" id="clear-tasks">Clear Tasks</button>
     </form>
 
-    <h2>Filter by:</h2>
-    <div id="filter-options">
-
-        <label for="filters">Filters</label>
-
-        <select name="filters" id="filter-options">
-            <option value="all">All</option>
-            <option value="completed">Completed</option>
-            <option value="pending">Pending</option>
-        </select>
+    
+    <div id="sort" class="sort-row">
+      <h5>Move Completed to bottom?</h5>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
     </div>
+
     <h2>To-Do List</h2>
     <div id="task-list">
-      <p v-if="tasks.length === 0">No tasks available</p>
-    <ul class="task-list">
-		<li class="task-list-item" v-for="task in tasks">
-			<label class="task-list-item-label">
-        <input type="checkbox">
-				<span>{{task.name}}</span>
-			</label>
-			<span @click="delItem(task)" class="delete-btn" title="Delete Task">{{task.del}}</span>
-		</li>
-	</ul>
+      <ul id="task-items">
+        <!-- Task items will be dynamically added here -->
+      </ul>
   </div>
-    
-
+</div>
   <script src="to_do.js"></script>
 </body>
-</html>
+</html>c
